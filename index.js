@@ -89,9 +89,9 @@ var SmartBanner = function (options) {
 	var userDismissed = cookie.get(this.appId + '-smartbanner-closed');
 	var userInstalled = cookie.get(this.appId + '-smartbanner-installed');
 
-	if (isMobileSafari || runningStandAlone || userDismissed || userInstalled) {
-		return;
-	}
+	// if (isMobileSafari || runningStandAlone || userDismissed || userInstalled) {
+	// 	return;
+	// }
 
 	extend(this, mixins[this.type]);
 
